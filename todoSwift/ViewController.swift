@@ -11,10 +11,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
 
     var todoList = [String]()
+    let userDefaults = UserDefaults.standard;
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        if let storedDataList = userDefaults.array(forKey: "todoList") as? [String] {
+            todoList.append(contentsOf: storedDataList);
+        }
     }
 
     @IBAction func addButtonAction(_ sender: Any) {
@@ -25,6 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if let textField = alertController.textFields?.first {
                 self.todoList.insert(textField.text!, at: 0);
                 self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: UITableView.RowAnimation.right);
+                self.userDefaults.set(self.todoList, forKey: "todoList");
             }
         }
         alertController.addAction(okAction);
@@ -50,6 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if editingStyle == UITableViewCell.EditingStyle.delete {
             todoList.remove(at: indexPath.row);
             tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic);
+            self.userDefaults.set(todoList, forKey: "todoList");
         }
     }
 }
