@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9C6D2C8F2618B85B00FAEC13 /* todoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6D2C8F2618B85B00FAEC13 /* todoSwiftWithStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoSwiftWithStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6D2C922618B85B00FAEC13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C6D2C942618B85B00FAEC13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9C6D2C962618B85B00FAEC13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		9C6D2C862618B85B00FAEC13 = {
 			isa = PBXGroup;
 			children = (
-				9C6D2C912618B85B00FAEC13 /* todoSwift */,
+				9C6D2C912618B85B00FAEC13 /* todoSwiftWithStoryboard */,
 				9C6D2C902618B85B00FAEC13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		9C6D2C902618B85B00FAEC13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C6D2C8F2618B85B00FAEC13 /* todoSwift.app */,
+				9C6D2C8F2618B85B00FAEC13 /* todoSwiftWithStoryboard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C6D2C912618B85B00FAEC13 /* todoSwift */ = {
+		9C6D2C912618B85B00FAEC13 /* todoSwiftWithStoryboard */ = {
 			isa = PBXGroup;
 			children = (
 				9C6D2C922618B85B00FAEC13 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				9C6D2C9D2618B85D00FAEC13 /* LaunchScreen.storyboard */,
 				9C6D2CA02618B85D00FAEC13 /* Info.plist */,
 			);
-			path = todoSwift;
+			path = todoSwiftWithStoryboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C6D2C8E2618B85B00FAEC13 /* todoSwift */ = {
+		9C6D2C8E2618B85B00FAEC13 /* todoSwiftWithStoryboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C6D2CA32618B85D00FAEC13 /* Build configuration list for PBXNativeTarget "todoSwift" */;
+			buildConfigurationList = 9C6D2CA32618B85D00FAEC13 /* Build configuration list for PBXNativeTarget "todoSwiftWithStoryboard" */;
 			buildPhases = (
 				9C6D2C8B2618B85B00FAEC13 /* Sources */,
 				9C6D2C8C2618B85B00FAEC13 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = todoSwift;
+			name = todoSwiftWithStoryboard;
 			productName = todoSwift;
-			productReference = 9C6D2C8F2618B85B00FAEC13 /* todoSwift.app */;
+			productReference = 9C6D2C8F2618B85B00FAEC13 /* todoSwiftWithStoryboard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9C6D2C8A2618B85B00FAEC13 /* Build configuration list for PBXProject "todoSwift" */;
+			buildConfigurationList = 9C6D2C8A2618B85B00FAEC13 /* Build configuration list for PBXProject "todoSwiftWithStoryboard" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C6D2C8E2618B85B00FAEC13 /* todoSwift */,
+				9C6D2C8E2618B85B00FAEC13 /* todoSwiftWithStoryboard */,
 			);
 		};
 /* End PBXProject section */
@@ -288,12 +288,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37BZJ3DY6M;
-				INFOPLIST_FILE = todoSwift/Info.plist;
+				INFOPLIST_FILE = todoSwiftWithStoryboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zerosant.todoSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerosant.todoSwiftWithStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,12 +307,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37BZJ3DY6M;
-				INFOPLIST_FILE = todoSwift/Info.plist;
+				INFOPLIST_FILE = todoSwiftWithStoryboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zerosant.todoSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerosant.todoSwiftWithStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C6D2C8A2618B85B00FAEC13 /* Build configuration list for PBXProject "todoSwift" */ = {
+		9C6D2C8A2618B85B00FAEC13 /* Build configuration list for PBXProject "todoSwiftWithStoryboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C6D2CA12618B85D00FAEC13 /* Debug */,
@@ -331,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C6D2CA32618B85D00FAEC13 /* Build configuration list for PBXNativeTarget "todoSwift" */ = {
+		9C6D2CA32618B85D00FAEC13 /* Build configuration list for PBXNativeTarget "todoSwiftWithStoryboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C6D2CA42618B85D00FAEC13 /* Debug */,
