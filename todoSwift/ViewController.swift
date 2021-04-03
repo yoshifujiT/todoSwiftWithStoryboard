@@ -22,7 +22,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alertController.addTextField(configurationHandler: nil)
 
         let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (action: UIAlertAction) in
-            // TODO: OK Action
+            if let textField = alertController.textFields?.first {
+                self.todoList.insert(textField.text!, at: 0);
+                self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: UITableView.RowAnimation.right);
+            }
         }
         alertController.addAction(okAction);
 
@@ -37,7 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath);
+        let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath);
         let todoTitle = todoList[indexPath.row];
         cell.textLabel?.text = todoTitle;
         return cell;
