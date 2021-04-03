@@ -44,7 +44,17 @@
                             <constraint firstItem="Tia-sp-avM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jIA-cm-8qW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="TODOリスト" id="Khq-OZ-v8Q"/>
+                    <navigationItem key="navigationItem" title="TODOリスト" id="Khq-OZ-v8Q">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SnN-EL-uDp">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonAction:" destination="BYZ-38-t0r" id="tqn-NQ-kPf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Tia-sp-avM" id="K2I-a9-DtF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
